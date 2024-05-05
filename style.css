@@ -1,0 +1,27 @@
+
+  /* Base styles */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two columns */
+    gap: 20px;
+    padding: 20px;
+  }
+  .item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    /* For screens up to 768px wide */
+    .container {
+      grid-template-columns: 1fr 1fr; /* Single column */
+    }
+  }
+  @media screen and (max-width: 558px) {
+    /* For screens up to 768px wide */
+    .container {
+      grid-template-columns: 1fr ; /* Single column */
+    }
+  }
